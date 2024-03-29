@@ -4,5 +4,9 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
+      - name: get code
+        uses: actions/checkout@v4
+      - name: install dependencies
+        uses: npm ci
       - name: start linting
         run: npm run lint
