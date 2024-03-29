@@ -7,6 +7,6 @@ jobs:
       - name: get code
         uses: actions/checkout@v4
       - name: install dependencies
-        uses: npm ci
+        run: npm ci
       - name: start linting
         run: npm run lint
