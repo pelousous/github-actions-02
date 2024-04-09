@@ -1,0 +1,10 @@
+name: Task 2 issue information
+on: [issues, workflow_dispatch]
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output Issue Title
+        run: echo "Issue title- ${{ github.event.issue.title }}"
+      - name: Output Issue Body  
+        run: echo "Issue body- ${{ github.event.issue.body }}"
